@@ -2,7 +2,7 @@
   // Applications part
   "apps" : [{
     "name"      : "crm",
-    "script"    : "/bin/www",
+    "script"    : "./bin/www",
     "env": {
       "COMMON_VARIABLE": "true"
     },
@@ -13,7 +13,7 @@
     }
   },{
     "name"      : "http2",
-    "script"    : "/bin/www"
+    "script"    : "./bin/www"
   }],
   // Deployment part
   // Here you describe each environment
