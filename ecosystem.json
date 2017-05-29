@@ -1,7 +1,7 @@
 {
   // Applications part
   "apps" : [{
-    "name"      : "crm",
+    "name"      : "http2",
     "script"    : "./bin/www",
     "env": {
       "COMMON_VARIABLE": "true"
