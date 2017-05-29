@@ -22,13 +22,13 @@ console.log('port',port)
 /**
  * Create HTTP server.  6500ms
  // */
-// var server = http.createServer(app.callback());
+var server = http.createServer(app.callback());
 var options={
   key: fs.readFileSync(path.join(__dirname, '../localhost.key')),
   cert: fs.readFileSync(path.join(__dirname, '../localhost.crt'))
 }
 // 1400ms
-var server = http2.createServer(options,app.callback());
+// var server = http2.createServer(options,app.callback());
 
 /**
  * Listen on provided port, on all network interfaces.
