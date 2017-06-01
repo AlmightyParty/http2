@@ -18,8 +18,14 @@ app.use(json());
 app.use(logger());
 app.use(require('koa-static')(__dirname + '/public'));
 
+
+// app.set('views', path.join(__dirname, 'views'));
+
+// app.set('view engine', 'html');
+// app.engine('html',require('ejs').__express);
+
 app.use(views(__dirname + '/views', {
-  extension: 'pug'
+  extension: 'html'
 }));
 
 // logger
